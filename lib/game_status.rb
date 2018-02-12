@@ -23,7 +23,7 @@ WIN_COMBINATIONS = [
         end
       end
     end
-    return nil
+    return false
   end
   
   def full?(board)
@@ -31,7 +31,7 @@ WIN_COMBINATIONS = [
   end
   
   def drew?(board)
-    if !won?(board) == true && full?(board) == true
+    if won?(board) == true && full?(board) == true
       return true
     else
       return false
