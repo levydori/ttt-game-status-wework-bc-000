@@ -29,3 +29,10 @@ WIN_COMBINATIONS = [
   def full?(board)
     return board.all? {|pos| !(pos.nil? || pos == " ")}
   end
+  
+  def drew?(board)
+    if !won?(board) and full?(board)
+      return true
+    else
+      return false
+  end
