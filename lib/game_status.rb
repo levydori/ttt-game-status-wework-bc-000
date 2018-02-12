@@ -27,5 +27,5 @@ WIN_COMBINATIONS = [
   end
   
   def full?(board)
-    return board.all? {|pos| !(pos.nil? || pos == " ")
+    return board.all? {|pos| !(pos.nil? || pos == " ")}
   end
