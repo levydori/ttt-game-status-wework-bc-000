@@ -45,3 +45,10 @@ def over?(board)
     return false
   end
 end
+
+def winner(board)
+  comb = won?(board)
+  if comb != false
+    return board[comb[0]]
+  end
+end
