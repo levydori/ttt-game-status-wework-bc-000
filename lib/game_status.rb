@@ -25,3 +25,7 @@ WIN_COMBINATIONS = [
     end
     return nil
   end
+  
+  def full?(board)
+    if board.all? { |loc| p
+  end
